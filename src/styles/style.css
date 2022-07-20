@@ -1,0 +1,52 @@
+
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+*, *::before, *::after{
+    border: 5px solid orange;
+    padding: 10px;
+}
+
+#content{
+    border: 3px solid thistle;
+    display: grid;
+    grid-template: 100px 100px 100px / repeat(7, 1fr);
+    grid-template-areas: 
+        "1 1 1 1 1 1 1"
+        ". homeBtn . menuBtn . contactBtn ."
+        "3 3 3 3 3 3 3";
+        gap: 10px;
+}
+
+#header{
+    grid-area: 1 / 1 / 2 / -1;
+}
+
+#homeBtn{
+    grid-area: homeBtn;
+}
+
+#menuBtn{
+    grid-area: menuBtn;
+}
+
+#contactBtn{
+    grid-area: contactBtn;
+}
+
+#infoSection{
+    grid-area: 3 / 1 / 4 / -1;
+    height: fit-content;
+}
+
+.headline{
+    font-size: 32px;
+    color: purple;
+}
+
+.info{
+    color: brown;
+}
