@@ -3,7 +3,7 @@ const addMenuInfo = function(){
 
     const BreakfastHeader = document.createElement('div');
     BreakfastHeader.classList.add('headline');
-    BreakfastHeader.textContent = 'Breakfast';
+    BreakfastHeader.innerHTML = 'Breakfast <hr>';
 
     menuInfo.appendChild(BreakfastHeader);
 
@@ -16,7 +16,7 @@ const addMenuInfo = function(){
 
     const LunchHeader = document.createElement('div');
     LunchHeader.classList.add('headline');
-    LunchHeader.textContent = 'Lunch';
+    LunchHeader.innerHTML = 'Lunch <hr>';
 
     menuInfo.appendChild(LunchHeader);
 
@@ -29,7 +29,7 @@ const addMenuInfo = function(){
 
     const DessertsHeader = document.createElement('div');
     DessertsHeader.classList.add('headline');
-    DessertsHeader.textContent = 'Desserts';
+    DessertsHeader.innerHTML = 'Desserts <hr>';
 
     menuInfo.appendChild(DessertsHeader);
 
@@ -41,7 +41,7 @@ const addMenuInfo = function(){
 
     const SnacksHeader = document.createElement('div');
     SnacksHeader.classList.add('headline');
-    SnacksHeader.textContent = 'Snacks';
+    SnacksHeader.innerHTML = 'Snacks <hr>';
 
     menuInfo.appendChild(SnacksHeader);
 

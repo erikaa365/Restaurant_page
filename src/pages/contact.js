@@ -28,6 +28,20 @@ const addContactInfo = function(){
     contactInfo.appendChild(EmailInfo);
 
 
+    const CreditsHeader = document.createElement('div');
+    CreditsHeader.classList.add('headline');
+    CreditsHeader.innerHTML = '<hr> Credits';
+
+    contactInfo.appendChild(CreditsHeader);
+
+    const CreditsInfo = document.createElement('div');
+    CreditsInfo.classList.add('info');
+    CreditsInfo.innerHTML = `Background photo by <a href="https://unsplash.com/@chrisliverani?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Chris Liverani</a> on <a href="https://unsplash.com/s/photos/restaurant?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+    `;
+
+    contactInfo.appendChild(CreditsInfo);
+
+
 
 }
 

@@ -4,7 +4,7 @@ const addHomeInfo = function(){
 
     const AboutHeader = document.createElement('div');
     AboutHeader.classList.add('headline');
-    AboutHeader.textContent = 'About us';
+    AboutHeader.innerHTML = 'About us <hr>';
 
     homeInfo.appendChild(AboutHeader);
 
@@ -17,7 +17,7 @@ const addHomeInfo = function(){
 
     const HoursHeader = document.createElement('div');
     HoursHeader.classList.add('headline');
-    HoursHeader.textContent = 'Working hours';
+    HoursHeader.innerHTML = 'Working hours <hr>';
 
     homeInfo.appendChild(HoursHeader);
 
@@ -30,7 +30,7 @@ const addHomeInfo = function(){
 
     const WhereHeader = document.createElement('div');
     WhereHeader.classList.add('headline');
-    WhereHeader.textContent = 'Where to find us?';
+    WhereHeader.innerHTML = 'Where to find us? <hr>';
 
     homeInfo.appendChild(WhereHeader);
 
